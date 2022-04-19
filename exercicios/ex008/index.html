@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8 - Outras formatações</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pre-formatação</h2>
+    <p>O comando <code>document.getElementById("teste")</code> é escrito em javascript.</p>
+    <h3>Comando De ping no Discord.js v12</h3>
+    <pre>
+        <code>
+    module.exports.run = async (client, message) => {
+        const m = await message.channel.send('ping?');
+        
+        m.edit(`🏓 **| Pong!**\nLatência do Server: **${m.createdTimestamp -
+            message.createdTimestamp}ms.**\nLatência da API: **${Math.round(
+            client.ws.ping
+            )}ms**`
+        )
+    };
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Nessa linha ha uma <q>frase marcada como citação</q></p>
+    <h2>Citações completas</h2>
+    <blockquote cite="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        never gonna give you up
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou aprendendo <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Este texto foi invertido</bdo></p>
+</body>
+</html>

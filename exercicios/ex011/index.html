@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11 - Imagens Dinamicas e Audios</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens Dinamicas e Audios</h1>
+    <p>Tente abrir esse site em dispositivos diferentes.</p>
+    <picture>
+        <source media="(max-width: 740px)" srcset="imagens/imagem-300.png" type="image/png">
+        <source media="(max-width: 1040px)" srcset="imagens/imagem-700.png" type="image/png">
+        <img src="imagens/imagem-1000.png" alt="imagem fexivel">
+    </picture><br>
+    <audio preload="metadata" controls>
+        <source src="audios/musica.ogg" type="audio/ogg">
+        <source src="audios/musica.mp3" type="audio/mpeg">
+        <source src="audios/musica.wav" type="audio/wav">
+        <p>Seu navegador não conseguiu reproduzir o audio mas você pode baixa-lo <a href="audios/musica.mp3" type="audio/mpeg" download="true">clicando aqui</a></p>
+    </audio>
+</body>
+</html>
